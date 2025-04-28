@@ -6,7 +6,7 @@ from rich.console import Console
 from rich.logging import RichHandler
 
 class LogManager:
-    def __init__(self, log_dir="data"):
+    def __init__(self, log_dir=os.getcwd()):
         # Richコンソールの設定
         self.console = Console()
 
