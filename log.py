@@ -6,7 +6,7 @@ from rich.console import Console
 from rich.logging import RichHandler
 
 class LogManager:
-    def __init__(self, log_dir=os.getcwd()): # カレントディレクトリをデフォルトに設定
+    def __init__(self, log_dir=os.path.join(os.path.dirname(__file__), "log-data")): # デフォルトのログディレクトリを指定
         # Richコンソールの設定
         self.console = Console()
 
