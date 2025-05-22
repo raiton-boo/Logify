@@ -1,4 +1,4 @@
-from Log import LogManager
+from log import LogManager
 import asyncio
 
 async def main():
